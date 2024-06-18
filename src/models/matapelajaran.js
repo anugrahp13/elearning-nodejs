@@ -12,12 +12,12 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
 
-      MataPelajaran.belongsTo(models.ModePembelajaranKelas,{
+      MataPelajaran.belongsTo(models.ModePembelajaranKelas, {
         foreignKey: "id_mpk",
       });
 
       MataPelajaran.hasMany(models.Bab, {
-        foreignKey: "id_pelajaran"
+        foreignKey: "id_pelajaran",
       });
     }
   }

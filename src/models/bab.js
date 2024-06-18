@@ -13,10 +13,10 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
 
       Bab.belongsTo(models.MataPelajaran, {
-        foreignKey: "id_pelajaran"
+        foreignKey: "id_pelajaran",
       });
       Bab.hasMany(models.SubBab, {
-        foreignKey: "id_bab"
+        foreignKey: "id_bab",
       });
     }
   }

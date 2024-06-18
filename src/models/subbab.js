@@ -12,11 +12,11 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       SubBab.belongsTo(models.Bab, {
-        foreignKey: "id_bab"
+        foreignKey: "id_bab",
       });
 
       SubBab.hasMany(models.Material, {
-        foreignKey: "id_SubBab"
+        foreignKey: "id_SubBab",
       })
     }
   }

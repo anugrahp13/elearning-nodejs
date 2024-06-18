@@ -13,11 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
 
       Material.belongsTo(models.SubBab, {
-        foreignKey: "id_sub"
+        foreignKey: "id_sub",
       });
 
       Material.hasMany(models.Progres, {
-        foreignKey: "id_material"
+        foreignKey: "id_material",
       });
     }
   }

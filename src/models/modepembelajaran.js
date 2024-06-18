@@ -12,10 +12,10 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       ModePembelajaran.belongsToMany(models.Kelas, {
-        through:models.ModePembelajaranKelas,
+        through: models.ModePembelajaranKelas,
         as:"kelas",
         foreignKey: "id_mode",
-      })
+      });
     }
   }
   ModePembelajaran.init({

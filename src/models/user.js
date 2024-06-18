@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
 
       User.hasMany(models.Progres, {
-        foreignKey: "id_user"
+        foreignKey: "id_user",
       });
     }
   }

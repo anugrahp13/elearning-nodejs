@@ -13,11 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
 
       Progres.belongsTo(models.Material, {
-        foreignKey: "id_material"
+        foreignKey: "id_material",
       });
 
       Progres.belongsTo(models.User, {
-        foreignKey: "id_user"
+        foreignKey: "id_user",
       });
     }
   }
