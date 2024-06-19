@@ -1,4 +1,4 @@
-const {ModePembelajaranKelas, MataPelajaran} = require("../models");
+const { ModePembelajaranKelas, MataPelajaran } = require("../models");
 
 const listMataPelajaran = async (req, res) => {
     const { id_kelas, id_mode_pembelajaran } = req.query;

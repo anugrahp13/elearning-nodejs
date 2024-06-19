@@ -1,4 +1,4 @@
-const {Kelas, ModePembelajaran} = require("../models");
+const { Kelas, ModePembelajaran } = require("../models");
 
 const listKelas = async (_req, res) => {
     try {
