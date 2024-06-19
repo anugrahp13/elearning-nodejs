@@ -22,7 +22,7 @@ const listMataPelajaran = async (req, res) => {
 
         if(!mpkData){
             return res.status(404).send({
-                message: "data mode pembelajaran kelas tidak ada!",
+                message: "Data mode pembelajaran kelas tidak ada!",
                 data: null,
             });
         }
@@ -36,13 +36,13 @@ const listMataPelajaran = async (req, res) => {
 
         if(!mpl.length){
             return res.status(404).send({
-                message: "data mata pelajaran tidak ada!",
+                message: "Data mata pelajaran tidak ada!",
                 data: [],
             });
         }
         
         return res.status(200).send({
-            message: "data mata pelajaran ada",
+            message: "Berhasil",
             data: mpl,
         });
     } catch (error) {

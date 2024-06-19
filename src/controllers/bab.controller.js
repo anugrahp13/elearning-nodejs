@@ -19,13 +19,13 @@ const listBab = async (req, res) => {
 
         if(!babData.length){
             return res.status(404).send({
-                message: "data bab tidak ada!",
+                message: "Data bab tidak ada!",
                 data: [],
             });
         }
 
         return res.status(200).send({
-            message: "data bab ada",
+            message: "Berhasil",
             data: babData,
         });
     } catch (error) {

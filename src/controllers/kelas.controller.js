@@ -16,8 +16,8 @@ const listKelas = async (_req, res) => {
 
         if(!kelas.length){
             return res.status(404).send({
-                message: "data kelas tidak ada!"
-            })
+                message: "Data kelas tidak ada!",
+            });
         }
 
         const data = kelas.map((kelas) => ({
@@ -26,7 +26,7 @@ const listKelas = async (_req, res) => {
         }))
 
         return res.status(200).send({
-            message: "data kelas ada",
+            message: "Berhasil",
             data: data,
         });
     } catch (error) {
