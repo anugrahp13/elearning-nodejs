@@ -1,4 +1,4 @@
-const { bab } = require("../models");
+const { Bab } = require("../models");
 
 const listBab = async (req, res) => {
     const { id_mata_pelajaran } = req.query;
@@ -11,7 +11,7 @@ const listBab = async (req, res) => {
     }
 
     try {
-        const babData = await bab.findAll({
+        const babData = await Bab.findAll({
             where: {
                 id_pelajaran: id_mata_pelajaran,
             },

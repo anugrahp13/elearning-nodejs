@@ -8,9 +8,9 @@ const { listMaterial } = require("../controllers/material.controller");
 
 //get data
 router.get("/kelas", listKelas);
-router.get("/matapelajaran", listMataPelajaran);
+router.get("/mata-pelajaran", listMataPelajaran);
 router.get("/bab", listBab);
-router.get("/subbab", listSubBab);
+router.get("/sub-bab", listSubBab);
 router.get("/material", listMaterial);
 
 
