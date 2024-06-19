@@ -28,7 +28,7 @@ const listKelas = async (_req, res) => {
         return res.status(200).send({
             message: "data kelas ada",
             data: data,
-        })
+        });
     } catch (error) {
         console.log("Ada kesalahan ketika ambil data kelas", error);
         return res.status(500).send({

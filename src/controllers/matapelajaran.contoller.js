@@ -11,18 +11,18 @@ const listMataPelajaran = async (req, res) => {
     }
 
     try {
-        const mpkdata = await ModePembelajaranKelas.findOne({
+        const mpkData = await ModePembelajaranKelas.findOne({
             where: {
                 id_kelas,
                 id_mode: id_mode_pembelajaran,
             },
         });
         
-        console.log("Mode Pembelajaran Kelas:", mpkdata);
+        console.log("Mode Pembelajaran Kelas:", mpkData);
 
-        if(!mpkdata){
+        if(!mpkData){
             return res.status(404).send({
-                message: "data mode pembelajaran Kelas tidak ada!",
+                message: "data mode pembelajaran kelas tidak ada!",
                 data: null,
             });
         }
@@ -45,7 +45,6 @@ const listMataPelajaran = async (req, res) => {
             message: "data mata pelajaran ada",
             data: mpl,
         });
-
     } catch (error) {
         console.log("Ada kesalahan ketika ambil data mata pelajaran", error);
         return res.status(500).send({
