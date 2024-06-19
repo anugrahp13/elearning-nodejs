@@ -4,7 +4,7 @@ const listMaterial = async(req, res) => {
     const { id_sub_bab } = req.query;
 
     if(!id_sub_bab){
-        return res.status(404).send({
+        return res.status(400).send({
             message: "id subbab diperlukan",
             data: null,
         });

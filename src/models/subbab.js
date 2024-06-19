@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       });
 
       SubBab.hasMany(models.Material, {
-        foreignKey: "id_SubBab",
+        foreignKey: "id_sub",
       })
     }
   }

@@ -29,7 +29,7 @@ const listMataPelajaran = async (req, res) => {
 
         const mpl = await MataPelajaran.findAll({
             where: {
-                id_mpk: mpkdata.id,
+                id_mpk: mpkData.id,
             },
             attributes: ["nama_pelajaran"],
         });
